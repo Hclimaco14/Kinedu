@@ -1,0 +1,222 @@
+[
+  {
+    "id": 23214,
+    "nps": 8,
+    "days_since_signup": 8,
+    "user_plan": "freemium",
+    "activity_views": 4,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.2"
+    }
+  },
+  {
+    "id": 22214,
+    "nps": 9,
+    "days_since_signup": 9,
+    "user_plan": "freemium",
+    "activity_views": 4,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.3"
+    }
+  },
+  {
+    "id": 22214,
+    "nps": 9,
+    "days_since_signup": 9,
+    "user_plan": "premium",
+    "activity_views": 4,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.3"
+    }
+  },
+  {
+    "id": 22214,
+    "nps": 9,
+    "days_since_signup": 9,
+    "user_plan": "premium",
+    "activity_views": 5,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.3"
+    }
+  },
+  {
+    "id": 22214,
+    "nps": 9,
+    "days_since_signup": 9,
+    "user_plan": "premium",
+    "activity_views": 4,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.3"
+    }
+  },
+  {
+    "id": 22214,
+    "nps": 9,
+    "days_since_signup": 9,
+    "user_plan": "premium",
+    "activity_views": 4,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.3"
+    }
+  },
+  {
+    "id": 22214,
+    "nps": 8,
+    "days_since_signup": 9,
+    "user_plan": "premium",
+    "activity_views": 5,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.3"
+    }
+  },
+  {
+    "id": 22214,
+    "nps": 7,
+    "days_since_signup": 9,
+    "user_plan": "premium",
+    "activity_views": 4,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.3"
+    }
+  },
+  {
+    "id": 22214,
+    "nps": 6,
+    "days_since_signup": 9,
+    "user_plan": "premium",
+    "activity_views": 4,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.3"
+    }
+  },
+  {
+    "id": 22214,
+    "nps": 6,
+    "days_since_signup": 9,
+    "user_plan": "premium",
+    "activity_views": 5,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.3"
+    }
+  },
+  {
+    "id": 23214,
+    "nps": 8,
+    "days_since_signup": 8,
+    "user_plan": "freemium",
+    "activity_views": 4,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.2"
+    }
+  },
+  {
+    "id": 22214,
+    "nps": 1,
+    "days_since_signup": 9,
+    "user_plan": "freemium",
+    "activity_views": 4,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.3"
+    }
+  },
+  {
+    "id": 22214,
+    "nps": 2,
+    "days_since_signup": 9,
+    "user_plan": "premium",
+    "activity_views": 4,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.3"
+    }
+  },
+  {
+    "id": 22214,
+    "nps": 3,
+    "days_since_signup": 9,
+    "user_plan": "premium",
+    "activity_views": 5,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.3"
+    }
+  },
+  {
+    "id": 22214,
+    "nps": 4,
+    "days_since_signup": 9,
+    "user_plan": "premium",
+    "activity_views": 4,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.3"
+    }
+  },
+  {
+    "id": 22214,
+    "nps": 3,
+    "days_since_signup": 9,
+    "user_plan": "premium",
+    "activity_views": 4,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.3"
+    }
+  },
+  {
+    "id": 22214,
+    "nps": 4,
+    "days_since_signup": 9,
+    "user_plan": "premium",
+    "activity_views": 5,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.3"
+    }
+  },
+  {
+    "id": 22214,
+    "nps": 7,
+    "days_since_signup": 9,
+    "user_plan": "premium",
+    "activity_views": 4,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.3"
+    }
+  },
+  {
+    "id": 22214,
+    "nps": 5,
+    "days_since_signup": 9,
+    "user_plan": "premium",
+    "activity_views": 4,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.3"
+    }
+  },
+  {
+    "id": 22214,
+    "nps": 3,
+    "days_since_signup": 9,
+    "user_plan": "premium",
+    "activity_views": 5,
+    "build": {
+      "release_date": "2016-11-30T18:08:11-06:00",
+      "version": "3.2.3"
+    }
+  }
+]

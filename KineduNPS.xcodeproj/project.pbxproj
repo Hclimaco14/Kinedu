@@ -1,0 +1,857 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4507EC4DE57243721DD22B81 /* Pods_KineduNPS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EBE7F3FADB68228DE251A51 /* Pods_KineduNPS.framework */; };
+		74C6618F250C856C005C0CFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C6618E250C856C005C0CFC /* AppDelegate.swift */; };
+		74C66198250C856D005C0CFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74C66197250C856D005C0CFC /* Assets.xcassets */; };
+		74C6619B250C856D005C0CFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C66199250C856D005C0CFC /* LaunchScreen.storyboard */; };
+		74C661A4250C862C005C0CFC /* NPSHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C661A2250C862C005C0CFC /* NPSHome.swift */; };
+		74C661A5250C862C005C0CFC /* NPSHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74C661A3250C862C005C0CFC /* NPSHome.xib */; };
+		74C661AF250C8710005C0CFC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C661AD250C8710005C0CFC /* AppCoordinator.swift */; };
+		74C661B0250C8710005C0CFC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C661AE250C8710005C0CFC /* Coordinator.swift */; };
+		74C661B3250C8898005C0CFC /* NPSDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C661B1250C8898005C0CFC /* NPSDetail.swift */; };
+		74C661B4250C8898005C0CFC /* NPSDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74C661B2250C8898005C0CFC /* NPSDetail.xib */; };
+		74C661B7250C8AF8005C0CFC /* BaseKineduVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C661B6250C8AF8005C0CFC /* BaseKineduVC.swift */; };
+		74C661BC250C8E84005C0CFC /* KineduColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C661BB250C8E84005C0CFC /* KineduColors.swift */; };
+		74C661C4250CC972005C0CFC /* ScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74C661C3250CC972005C0CFC /* ScoreView.xib */; };
+		74C661C6250CC98F005C0CFC /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C661C5250CC98F005C0CFC /* ScoreView.swift */; };
+		74C661C9250CCECA005C0CFC /* KineduEng.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74C661C8250CCECA005C0CFC /* KineduEng.strings */; };
+		74C661CC250CD183005C0CFC /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C661CB250CD183005C0CFC /* StringExtensions.swift */; };
+		74C661CE250CD1B1005C0CFC /* KineduConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C661CD250CD1B1005C0CFC /* KineduConstants.swift */; };
+		74C661DE250ECA46005C0CFC /* KineduNPSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C661DD250ECA46005C0CFC /* KineduNPSTests.swift */; };
+		74C661E6250ECC40005C0CFC /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C661E5250ECC40005C0CFC /* NetworkUtils.swift */; };
+		74C661ED250ED632005C0CFC /* NPSServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C661EC250ED632005C0CFC /* NPSServices.swift */; };
+		74C661F0250ED6F6005C0CFC /* NPSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C661EF250ED6F6005C0CFC /* NPSItem.swift */; };
+		74C661F2250ED7B4005C0CFC /* BuildItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C661F1250ED7B4005C0CFC /* BuildItem.swift */; };
+		74C661F4250EEB02005C0CFC /* NPSHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C661F3250EEB02005C0CFC /* NPSHomeViewModel.swift */; };
+		74C661F7250EEC81005C0CFC /* UserScoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C661F6250EEC81005C0CFC /* UserScoreItem.swift */; };
+		74C661FA250EF175005C0CFC /* KineduFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C661F9250EF175005C0CFC /* KineduFonts.swift */; };
+		74C661FF250F1442005C0CFC /* AppVersionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C661FD250F1442005C0CFC /* AppVersionCell.swift */; };
+		74C66200250F1442005C0CFC /* AppVersionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74C661FE250F1442005C0CFC /* AppVersionCell.xib */; };
+		74DB3517250F5FBA000CD4CE /* npsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 74DB3516250F5FBA000CD4CE /* npsData.json */; };
+		74DB351A250F66A6000CD4CE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DB3519250F66A6000CD4CE /* LoadingView.swift */; };
+		74DB351C250F66BC000CD4CE /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DB351B250F66BC000CD4CE /* LoadingView.xib */; };
+		74DB3520250F7ED9000CD4CE /* NPSChoiseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DB351E250F7ED9000CD4CE /* NPSChoiseCell.swift */; };
+		74DB3521250F7EDA000CD4CE /* NPSChoiseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DB351F250F7ED9000CD4CE /* NPSChoiseCell.xib */; };
+		74DB3523250F864C000CD4CE /* NPSDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DB3522250F864C000CD4CE /* NPSDetailsViewModel.swift */; };
+		74DB3525250FDA34000CD4CE /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DB3524250FDA34000CD4CE /* LaunchScreen.swift */; };
+		DB57C3F7CF2041EC1F47DA4A /* Pods_KineduNPSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5979CFFF7E0A637AB3C44B /* Pods_KineduNPSTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74C661E0250ECA46005C0CFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74C66183250C856C005C0CFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74C6618A250C856C005C0CFC;
+			remoteInfo = KineduNPS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0EBE7F3FADB68228DE251A51 /* Pods_KineduNPS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KineduNPS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74C6618B250C856C005C0CFC /* KineduNPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KineduNPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74C6618E250C856C005C0CFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		74C66197250C856D005C0CFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74C6619A250C856D005C0CFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74C6619C250C856D005C0CFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74C661A2250C862C005C0CFC /* NPSHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPSHome.swift; sourceTree = "<group>"; };
+		74C661A3250C862C005C0CFC /* NPSHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NPSHome.xib; sourceTree = "<group>"; };
+		74C661AD250C8710005C0CFC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		74C661AE250C8710005C0CFC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		74C661B1250C8898005C0CFC /* NPSDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPSDetail.swift; sourceTree = "<group>"; };
+		74C661B2250C8898005C0CFC /* NPSDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NPSDetail.xib; sourceTree = "<group>"; };
+		74C661B6250C8AF8005C0CFC /* BaseKineduVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseKineduVC.swift; sourceTree = "<group>"; };
+		74C661BB250C8E84005C0CFC /* KineduColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KineduColors.swift; sourceTree = "<group>"; };
+		74C661C3250CC972005C0CFC /* ScoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreView.xib; sourceTree = "<group>"; };
+		74C661C5250CC98F005C0CFC /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		74C661C8250CCECA005C0CFC /* KineduEng.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = KineduEng.strings; sourceTree = "<group>"; };
+		74C661CB250CD183005C0CFC /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		74C661CD250CD1B1005C0CFC /* KineduConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KineduConstants.swift; sourceTree = "<group>"; };
+		74C661DB250ECA46005C0CFC /* KineduNPSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KineduNPSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74C661DD250ECA46005C0CFC /* KineduNPSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KineduNPSTests.swift; sourceTree = "<group>"; };
+		74C661DF250ECA46005C0CFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74C661E5250ECC40005C0CFC /* NetworkUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		74C661EC250ED632005C0CFC /* NPSServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPSServices.swift; sourceTree = "<group>"; };
+		74C661EF250ED6F6005C0CFC /* NPSItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPSItem.swift; sourceTree = "<group>"; };
+		74C661F1250ED7B4005C0CFC /* BuildItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildItem.swift; sourceTree = "<group>"; };
+		74C661F3250EEB02005C0CFC /* NPSHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPSHomeViewModel.swift; sourceTree = "<group>"; };
+		74C661F6250EEC81005C0CFC /* UserScoreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScoreItem.swift; sourceTree = "<group>"; };
+		74C661F9250EF175005C0CFC /* KineduFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KineduFonts.swift; sourceTree = "<group>"; };
+		74C661FD250F1442005C0CFC /* AppVersionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionCell.swift; sourceTree = "<group>"; };
+		74C661FE250F1442005C0CFC /* AppVersionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppVersionCell.xib; sourceTree = "<group>"; };
+		74DB3516250F5FBA000CD4CE /* npsData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = npsData.json; sourceTree = "<group>"; };
+		74DB3519250F66A6000CD4CE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		74DB351B250F66BC000CD4CE /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		74DB351E250F7ED9000CD4CE /* NPSChoiseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPSChoiseCell.swift; sourceTree = "<group>"; };
+		74DB351F250F7ED9000CD4CE /* NPSChoiseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NPSChoiseCell.xib; sourceTree = "<group>"; };
+		74DB3522250F864C000CD4CE /* NPSDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPSDetailsViewModel.swift; sourceTree = "<group>"; };
+		74DB3524250FDA34000CD4CE /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		812155AB2FE78AF52DF43A06 /* Pods-KineduNPSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KineduNPSTests.release.xcconfig"; path = "Target Support Files/Pods-KineduNPSTests/Pods-KineduNPSTests.release.xcconfig"; sourceTree = "<group>"; };
+		81922B9B3F032EFC59F8EFA9 /* Pods-KineduNPSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KineduNPSTests.debug.xcconfig"; path = "Target Support Files/Pods-KineduNPSTests/Pods-KineduNPSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9900F81B58DE2ECB846CAC05 /* Pods-KineduNPS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KineduNPS.release.xcconfig"; path = "Target Support Files/Pods-KineduNPS/Pods-KineduNPS.release.xcconfig"; sourceTree = "<group>"; };
+		BCC0CD4F68DC1BD4EC7ABC9D /* Pods-KineduNPS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KineduNPS.debug.xcconfig"; path = "Target Support Files/Pods-KineduNPS/Pods-KineduNPS.debug.xcconfig"; sourceTree = "<group>"; };
+		EF5979CFFF7E0A637AB3C44B /* Pods_KineduNPSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KineduNPSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74C66188250C856C005C0CFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4507EC4DE57243721DD22B81 /* Pods_KineduNPS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74C661D8250ECA46005C0CFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB57C3F7CF2041EC1F47DA4A /* Pods_KineduNPSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1295F593FD7A70F704C779C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCC0CD4F68DC1BD4EC7ABC9D /* Pods-KineduNPS.debug.xcconfig */,
+				9900F81B58DE2ECB846CAC05 /* Pods-KineduNPS.release.xcconfig */,
+				81922B9B3F032EFC59F8EFA9 /* Pods-KineduNPSTests.debug.xcconfig */,
+				812155AB2FE78AF52DF43A06 /* Pods-KineduNPSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3466922824182B5A66B951CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EBE7F3FADB68228DE251A51 /* Pods_KineduNPS.framework */,
+				EF5979CFFF7E0A637AB3C44B /* Pods_KineduNPSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74C66182250C856C005C0CFC = {
+			isa = PBXGroup;
+			children = (
+				74C6618D250C856C005C0CFC /* KineduNPS */,
+				74C661DC250ECA46005C0CFC /* KineduNPSTests */,
+				74C6618C250C856C005C0CFC /* Products */,
+				1295F593FD7A70F704C779C0 /* Pods */,
+				3466922824182B5A66B951CE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		74C6618C250C856C005C0CFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74C6618B250C856C005C0CFC /* KineduNPS.app */,
+				74C661DB250ECA46005C0CFC /* KineduNPSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74C6618D250C856C005C0CFC /* KineduNPS */ = {
+			isa = PBXGroup;
+			children = (
+				74C661A6250C8635005C0CFC /* Coordinator */,
+				74C661B5250C89B1005C0CFC /* Model */,
+				74C661C7250CCD7A005C0CFC /* Resources */,
+				74C661D0250DC78A005C0CFC /* Network */,
+				74C661B8250C8DB2005C0CFC /* Utils */,
+				74C661A7250C8645005C0CFC /* UI */,
+				74C661CF250D3F34005C0CFC /* ViewModels */,
+				74C6618E250C856C005C0CFC /* AppDelegate.swift */,
+				74C66199250C856D005C0CFC /* LaunchScreen.storyboard */,
+				74C6619C250C856D005C0CFC /* Info.plist */,
+				74DB3524250FDA34000CD4CE /* LaunchScreen.swift */,
+			);
+			path = KineduNPS;
+			sourceTree = "<group>";
+		};
+		74C661A6250C8635005C0CFC /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				74C661AD250C8710005C0CFC /* AppCoordinator.swift */,
+				74C661AE250C8710005C0CFC /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		74C661A7250C8645005C0CFC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				74C661A9250C866C005C0CFC /* Components */,
+				74C661A8250C8652005C0CFC /* View */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		74C661A8250C8652005C0CFC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74C661AC250C86DA005C0CFC /* NPS */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74C661A9250C866C005C0CFC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				74DB3518250F664E000CD4CE /* Loading */,
+				74C661C2250CC95B005C0CFC /* ScoreView */,
+				74C661B6250C8AF8005C0CFC /* BaseKineduVC.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		74C661AA250C867A005C0CFC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				74C661FB250F1407005C0CFC /* AppVersionCell */,
+				74C661A2250C862C005C0CFC /* NPSHome.swift */,
+				74C661A3250C862C005C0CFC /* NPSHome.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		74C661AB250C8693005C0CFC /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				74DB351D250F7EA9000CD4CE /* NPSChoiseCell */,
+				74C661B1250C8898005C0CFC /* NPSDetail.swift */,
+				74C661B2250C8898005C0CFC /* NPSDetail.xib */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		74C661AC250C86DA005C0CFC /* NPS */ = {
+			isa = PBXGroup;
+			children = (
+				74C661AB250C8693005C0CFC /* Detail */,
+				74C661AA250C867A005C0CFC /* Home */,
+			);
+			path = NPS;
+			sourceTree = "<group>";
+		};
+		74C661B5250C89B1005C0CFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74C661EE250ED6DD005C0CFC /* NPS */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74C661B8250C8DB2005C0CFC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				74C661CA250CD0EB005C0CFC /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		74C661B9250C8E59005C0CFC /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				74C661BB250C8E84005C0CFC /* KineduColors.swift */,
+				74C661F9250EF175005C0CFC /* KineduFonts.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		74C661C2250CC95B005C0CFC /* ScoreView */ = {
+			isa = PBXGroup;
+			children = (
+				74C661C3250CC972005C0CFC /* ScoreView.xib */,
+				74C661C5250CC98F005C0CFC /* ScoreView.swift */,
+			);
+			path = ScoreView;
+			sourceTree = "<group>";
+		};
+		74C661C7250CCD7A005C0CFC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				74C66197250C856D005C0CFC /* Assets.xcassets */,
+				74C661C8250CCECA005C0CFC /* KineduEng.strings */,
+				74C661CD250CD1B1005C0CFC /* KineduConstants.swift */,
+				74C661B9250C8E59005C0CFC /* Styles */,
+				74DB3516250F5FBA000CD4CE /* npsData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		74C661CA250CD0EB005C0CFC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				74C661CB250CD183005C0CFC /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		74C661CF250D3F34005C0CFC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				74C66201250F2A05005C0CFC /* NPS */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		74C661D0250DC78A005C0CFC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				74C661EA250ED5D2005C0CFC /* ServiceManager */,
+				74C661E5250ECC40005C0CFC /* NetworkUtils.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		74C661DC250ECA46005C0CFC /* KineduNPSTests */ = {
+			isa = PBXGroup;
+			children = (
+				74C661DD250ECA46005C0CFC /* KineduNPSTests.swift */,
+				74C661DF250ECA46005C0CFC /* Info.plist */,
+			);
+			path = KineduNPSTests;
+			sourceTree = "<group>";
+		};
+		74C661EA250ED5D2005C0CFC /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				74C661EC250ED632005C0CFC /* NPSServices.swift */,
+			);
+			path = ServiceManager;
+			sourceTree = "<group>";
+		};
+		74C661EE250ED6DD005C0CFC /* NPS */ = {
+			isa = PBXGroup;
+			children = (
+				74C661EF250ED6F6005C0CFC /* NPSItem.swift */,
+				74C661F1250ED7B4005C0CFC /* BuildItem.swift */,
+				74C661F6250EEC81005C0CFC /* UserScoreItem.swift */,
+			);
+			path = NPS;
+			sourceTree = "<group>";
+		};
+		74C661FB250F1407005C0CFC /* AppVersionCell */ = {
+			isa = PBXGroup;
+			children = (
+				74C661FD250F1442005C0CFC /* AppVersionCell.swift */,
+				74C661FE250F1442005C0CFC /* AppVersionCell.xib */,
+			);
+			path = AppVersionCell;
+			sourceTree = "<group>";
+		};
+		74C66201250F2A05005C0CFC /* NPS */ = {
+			isa = PBXGroup;
+			children = (
+				74C661F3250EEB02005C0CFC /* NPSHomeViewModel.swift */,
+				74DB3522250F864C000CD4CE /* NPSDetailsViewModel.swift */,
+			);
+			path = NPS;
+			sourceTree = "<group>";
+		};
+		74DB3518250F664E000CD4CE /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				74DB3519250F66A6000CD4CE /* LoadingView.swift */,
+				74DB351B250F66BC000CD4CE /* LoadingView.xib */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		74DB351D250F7EA9000CD4CE /* NPSChoiseCell */ = {
+			isa = PBXGroup;
+			children = (
+				74DB351E250F7ED9000CD4CE /* NPSChoiseCell.swift */,
+				74DB351F250F7ED9000CD4CE /* NPSChoiseCell.xib */,
+			);
+			path = NPSChoiseCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74C6618A250C856C005C0CFC /* KineduNPS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74C6619F250C856D005C0CFC /* Build configuration list for PBXNativeTarget "KineduNPS" */;
+			buildPhases = (
+				86E55B372028C591BBE015A0 /* [CP] Check Pods Manifest.lock */,
+				74C66187250C856C005C0CFC /* Sources */,
+				74C66188250C856C005C0CFC /* Frameworks */,
+				74C66189250C856C005C0CFC /* Resources */,
+				6DC19B58AFD5BA868823897F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KineduNPS;
+			productName = KineduNPS;
+			productReference = 74C6618B250C856C005C0CFC /* KineduNPS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74C661DA250ECA46005C0CFC /* KineduNPSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74C661E4250ECA46005C0CFC /* Build configuration list for PBXNativeTarget "KineduNPSTests" */;
+			buildPhases = (
+				E8743F46A54B86F08504A6AB /* [CP] Check Pods Manifest.lock */,
+				74C661D7250ECA46005C0CFC /* Sources */,
+				74C661D8250ECA46005C0CFC /* Frameworks */,
+				74C661D9250ECA46005C0CFC /* Resources */,
+				64341914AD49DA3208EAB52D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74C661E1250ECA46005C0CFC /* PBXTargetDependency */,
+			);
+			name = KineduNPSTests;
+			productName = KineduNPSTests;
+			productReference = 74C661DB250ECA46005C0CFC /* KineduNPSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74C66183250C856C005C0CFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = Hector;
+				TargetAttributes = {
+					74C6618A250C856C005C0CFC = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					74C661DA250ECA46005C0CFC = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 74C6618A250C856C005C0CFC;
+					};
+				};
+			};
+			buildConfigurationList = 74C66186250C856C005C0CFC /* Build configuration list for PBXProject "KineduNPS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74C66182250C856C005C0CFC;
+			productRefGroup = 74C6618C250C856C005C0CFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74C6618A250C856C005C0CFC /* KineduNPS */,
+				74C661DA250ECA46005C0CFC /* KineduNPSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74C66189250C856C005C0CFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74C661C4250CC972005C0CFC /* ScoreView.xib in Resources */,
+				74C661C9250CCECA005C0CFC /* KineduEng.strings in Resources */,
+				74C6619B250C856D005C0CFC /* LaunchScreen.storyboard in Resources */,
+				74C66200250F1442005C0CFC /* AppVersionCell.xib in Resources */,
+				74DB3521250F7EDA000CD4CE /* NPSChoiseCell.xib in Resources */,
+				74C661A5250C862C005C0CFC /* NPSHome.xib in Resources */,
+				74C661B4250C8898005C0CFC /* NPSDetail.xib in Resources */,
+				74DB351C250F66BC000CD4CE /* LoadingView.xib in Resources */,
+				74C66198250C856D005C0CFC /* Assets.xcassets in Resources */,
+				74DB3517250F5FBA000CD4CE /* npsData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74C661D9250ECA46005C0CFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64341914AD49DA3208EAB52D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KineduNPSTests/Pods-KineduNPSTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KineduNPSTests/Pods-KineduNPSTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KineduNPSTests/Pods-KineduNPSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DC19B58AFD5BA868823897F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KineduNPS/Pods-KineduNPS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KineduNPS/Pods-KineduNPS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KineduNPS/Pods-KineduNPS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86E55B372028C591BBE015A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KineduNPS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8743F46A54B86F08504A6AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KineduNPSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74C66187250C856C005C0CFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74C661B0250C8710005C0CFC /* Coordinator.swift in Sources */,
+				74C661F0250ED6F6005C0CFC /* NPSItem.swift in Sources */,
+				74DB3525250FDA34000CD4CE /* LaunchScreen.swift in Sources */,
+				74DB3520250F7ED9000CD4CE /* NPSChoiseCell.swift in Sources */,
+				74C661FF250F1442005C0CFC /* AppVersionCell.swift in Sources */,
+				74C661CC250CD183005C0CFC /* StringExtensions.swift in Sources */,
+				74DB3523250F864C000CD4CE /* NPSDetailsViewModel.swift in Sources */,
+				74C661C6250CC98F005C0CFC /* ScoreView.swift in Sources */,
+				74C661BC250C8E84005C0CFC /* KineduColors.swift in Sources */,
+				74C661B7250C8AF8005C0CFC /* BaseKineduVC.swift in Sources */,
+				74C661CE250CD1B1005C0CFC /* KineduConstants.swift in Sources */,
+				74C661FA250EF175005C0CFC /* KineduFonts.swift in Sources */,
+				74C661E6250ECC40005C0CFC /* NetworkUtils.swift in Sources */,
+				74C661F7250EEC81005C0CFC /* UserScoreItem.swift in Sources */,
+				74C661AF250C8710005C0CFC /* AppCoordinator.swift in Sources */,
+				74C661B3250C8898005C0CFC /* NPSDetail.swift in Sources */,
+				74C661ED250ED632005C0CFC /* NPSServices.swift in Sources */,
+				74C661A4250C862C005C0CFC /* NPSHome.swift in Sources */,
+				74C6618F250C856C005C0CFC /* AppDelegate.swift in Sources */,
+				74C661F4250EEB02005C0CFC /* NPSHomeViewModel.swift in Sources */,
+				74DB351A250F66A6000CD4CE /* LoadingView.swift in Sources */,
+				74C661F2250ED7B4005C0CFC /* BuildItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74C661D7250ECA46005C0CFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74C661DE250ECA46005C0CFC /* KineduNPSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74C661E1250ECA46005C0CFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74C6618A250C856C005C0CFC /* KineduNPS */;
+			targetProxy = 74C661E0250ECA46005C0CFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		74C66199250C856D005C0CFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74C6619A250C856D005C0CFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74C6619D250C856D005C0CFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		74C6619E250C856D005C0CFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74C661A0250C856D005C0CFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCC0CD4F68DC1BD4EC7ABC9D /* Pods-KineduNPS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 785V9QZK54;
+				INFOPLIST_FILE = KineduNPS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.climaco.KineduNPS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		74C661A1250C856D005C0CFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9900F81B58DE2ECB846CAC05 /* Pods-KineduNPS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 785V9QZK54;
+				INFOPLIST_FILE = KineduNPS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.climaco.KineduNPS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		74C661E2250ECA46005C0CFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81922B9B3F032EFC59F8EFA9 /* Pods-KineduNPSTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 785V9QZK54;
+				INFOPLIST_FILE = KineduNPSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.climaco.KineduNPSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KineduNPS.app/KineduNPS";
+			};
+			name = Debug;
+		};
+		74C661E3250ECA46005C0CFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 812155AB2FE78AF52DF43A06 /* Pods-KineduNPSTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 785V9QZK54;
+				INFOPLIST_FILE = KineduNPSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.climaco.KineduNPSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KineduNPS.app/KineduNPS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74C66186250C856C005C0CFC /* Build configuration list for PBXProject "KineduNPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74C6619D250C856D005C0CFC /* Debug */,
+				74C6619E250C856D005C0CFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74C6619F250C856D005C0CFC /* Build configuration list for PBXNativeTarget "KineduNPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74C661A0250C856D005C0CFC /* Debug */,
+				74C661A1250C856D005C0CFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74C661E4250ECA46005C0CFC /* Build configuration list for PBXNativeTarget "KineduNPSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74C661E2250ECA46005C0CFC /* Debug */,
+				74C661E3250ECA46005C0CFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74C66183250C856C005C0CFC /* Project object */;
+}

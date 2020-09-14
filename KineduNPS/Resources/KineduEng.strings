@@ -1,0 +1,31 @@
+/* 
+  KineduEng.strings
+  KineduNPS
+
+  Created by Hector Climaco on 12/09/20.
+  Copyright © 2020 Hector. All rights reserved.
+*/
+
+//Titles views
+"NPS_SCORE_TITLE" = "Kinedu NPS Score";
+"DETAIL_TITLE" = "NPS Detail ";
+"NPS_SCORE_SUBTITLE" = "Chose app version";
+
+//NPS SCORE
+"CHOSE_APP_VERSION" = "Chose app version";
+"NPS" = "NPS SCORE";
+"FREMIUM_USERS" = "Fremium users";
+"PREMIUM_USERS" = "Premium users";
+"TOTAL_USER" = "Out of NUMBER_USER users";
+"SEE_MORE_DETAILS" = "See more details";
+
+//NPS DETAIL
+"CHOISE_SELECT" = "Choose a number";
+"DETAIL_TITLE_VIEW" = "NPS DETAILS";
+"FREMIUM_LABEL" = "Fremium users";
+"PREMIUM_LABEL" = "Premium users";
+
+"NO_USERS" = "No users with this answer";
+"PERCENT_USER" = "PERCENT_USER% of the users that answered ANSWER_KEY in their NPS score saw ACTIVITIES_KEY activities.";
+//ERROR
+"URL_NOTFOUND" = "Fail to convert String to URL";
