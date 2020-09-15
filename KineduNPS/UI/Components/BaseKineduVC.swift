@@ -53,4 +53,13 @@ class BaseKineduVC: UIViewController {
       }
   }
   
+  func showAlert(title:String,body:String,style: UIAlertController.Style = .alert,_ completion: (()->Void)? = nil) {
+    let alert = UIAlertController(title: title, message: body, preferredStyle: style)
+    let action = UIAlertAction(title: "ALERT_ACTION_TEXT".localized(), style: .default) { (action) in
+      completion?()
+    }
+    alert.addAction(action)
+    self.present(alert, animated: true, completion: nil)
+  }
+  
 }

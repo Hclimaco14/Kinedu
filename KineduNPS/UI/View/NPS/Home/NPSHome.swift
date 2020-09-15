@@ -112,6 +112,9 @@ class NPSHome: BaseKineduVC {
     homeVM.services.hideLoading = {
       self.hideLoading()
     }
+    homeVM.errorService = { error in
+      self.showAlert(title: "ERROR_ALERT".localized(), body: error)
+    }
     
   }
   

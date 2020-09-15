@@ -29,3 +29,7 @@
 "PERCENT_USER" = "PERCENT_USER% of the users that answered ANSWER_KEY in their NPS score saw ACTIVITIES_KEY activities.";
 //ERROR
 "URL_NOTFOUND" = "Fail to convert String to URL";
+
+//BASE
+"ALERT_ACTION_TEXT" = "Acept";
+"ERROR_ALERT" = "Error";

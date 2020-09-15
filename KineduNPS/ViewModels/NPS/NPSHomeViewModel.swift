@@ -47,7 +47,7 @@ class NPSHomeViewModel: NSObject {
   
   public func loadData() {
     self.versions.removeAll()
-    services.getNPS(loadFromFile: true) { (response,error) in
+    services.getNPS(loadFromFile: false) { (response,error) in
       if let strError = error {
         self.errorService?(strError)
         return

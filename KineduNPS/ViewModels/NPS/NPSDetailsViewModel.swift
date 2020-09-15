@@ -77,7 +77,7 @@ class NPSDetailsViewModel: NSObject {
    
   }
   
-  func percent(grpups: [Int? : [NPSItem]],answer:Int) {
+  private func percent(grpups: [Int? : [NPSItem]],answer:Int) {
     var total = 0
     var maxUserByGroup = 0
     var key = 0
