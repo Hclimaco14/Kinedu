@@ -47,14 +47,15 @@ class NPSHomeViewModel: NSObject {
   
   public func loadData() {
     self.versions.removeAll()
-    services.getNPS(loadFromFile: false) { (response,error) in
-      if let strError = error {
-        self.errorService?(strError)
-        return
-      }
-      guard let items = response else { return }
-      
-      self.versions = Dictionary(grouping: items, by: { ($0.build?.version ?? "1.1") })
+    services.getNPS(loadFromFile: true) { result in
+        
+        switch result {
+        case .success(let responseItems):
+            guard let items = responseItems else  { return }
+            self.versions = Dictionary(grouping: items, by: { ($0.build?.version ?? "1.1") })
+        case .failure(let failure):
+            self.errorService?(failure.description)
+        }
     }
   }
   

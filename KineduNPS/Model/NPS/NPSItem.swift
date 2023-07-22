@@ -7,9 +7,9 @@
 //
 
 import Foundation
-import ObjectMapper
 
-open class NPSItem: NSObject,Mappable {
+public struct NPSItem: Codable {
+    
   var id:Int?
   var nps:Int?
   var days_since_signup:Int?
@@ -17,7 +17,7 @@ open class NPSItem: NSObject,Mappable {
   var activity_views:Int?
   var build:BuildItem?
   
-  open override var description: String {
+  var description: String {
     
     var desc = "id: \(String(describing:  id))"
     desc += "\nnps: \(String(describing:  nps))"
@@ -29,18 +29,4 @@ open class NPSItem: NSObject,Mappable {
     return desc
   }
   
-  
-  public override init() {}
-  
-  required public init?(map: Map) {
-  }
-  
-  open func mapping(map: Map) {
-    id <- map["id"]
-    nps <- map["nps"]
-    days_since_signup <- map["days_since_signup"]
-    user_plan <- map["user_plan"]
-    activity_views <- map["activity_views"]
-    build <- map["build"]
-  }
 }

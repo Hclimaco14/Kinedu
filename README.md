@@ -6,17 +6,11 @@ Prueba de Kinedu
 - Swift 5+
 - iOS 12+
 - Una conexión activa a internet
-- Conocimiento y configuración de Cocoapods (cocoapopds.org)
 
 ### KineduNPS:
 
 Contiene un proyecto  con la prueba de seleccion de Kinedu, se crea aplicacion con el patron de diseño MVVM y Separacion de consumo de datos,  crea prueba unitaria para el consumo de servicio, este puede ser mediante la url proporcionado en la documentacion y se anexa archivo .json para pruebas ya que el servicio no estaba activo este se puede swichear mediante la bandera "loadFromFile"  Ubicacada en KinediNPS -> ViewModels -> NPS -> NPSHomeViewModel.swift  linea: 50 
 
-
-cd .../Kinedu
-
-pod repo update
-pod install
 
 
 ### Release Notes:
@@ -30,3 +24,7 @@ Version: 1.0
 * Se crea componete visual para la visulalizacion de score en pantalla princial 
 * Se crea pantalla para la visualizacion de detalles por version 
 * Se crea MVVM para el manejo de reglas de negocio de Detalles
+
+Version: 1.1 
+* Actualizacion de proyecto para xcode 14
+* remplazo de ObjectMapper y Alamofire, por Codable y UrlSesion

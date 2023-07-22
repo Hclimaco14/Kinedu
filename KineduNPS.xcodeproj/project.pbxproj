@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17C7D91FD4A1658EB311C547 /* Pods_KineduNPS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B3045E014767120B2C3A863 /* Pods_KineduNPS.framework */; };
+		746A72C12A6B7EA900C5912D /* JsonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746A72C02A6B7EA900C5912D /* JsonUtils.swift */; };
+		746A72C32A6B994E00C5912D /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746A72C22A6B994E00C5912D /* Mapper.swift */; };
 		74C6618F250C856C005C0CFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C6618E250C856C005C0CFC /* AppDelegate.swift */; };
 		74C66198250C856D005C0CFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74C66197250C856D005C0CFC /* Assets.xcassets */; };
 		74C6619B250C856D005C0CFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C66199250C856D005C0CFC /* LaunchScreen.storyboard */; };
@@ -41,7 +42,6 @@
 		74DB3521250F7EDA000CD4CE /* NPSChoiseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74DB351F250F7ED9000CD4CE /* NPSChoiseCell.xib */; };
 		74DB3523250F864C000CD4CE /* NPSDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DB3522250F864C000CD4CE /* NPSDetailsViewModel.swift */; };
 		74DB3525250FDA34000CD4CE /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DB3524250FDA34000CD4CE /* LaunchScreen.swift */; };
-		9D713294FD777A1E1AE6CAD7 /* Pods_KineduNPSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81A311BEBF93E4D45E2AF97 /* Pods_KineduNPSTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		052432760E4D5740C2897575 /* Pods-KineduNPS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KineduNPS.release.xcconfig"; path = "Target Support Files/Pods-KineduNPS/Pods-KineduNPS.release.xcconfig"; sourceTree = "<group>"; };
-		5198D908AFB01D8CE908CCEC /* Pods-KineduNPS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KineduNPS.debug.xcconfig"; path = "Target Support Files/Pods-KineduNPS/Pods-KineduNPS.debug.xcconfig"; sourceTree = "<group>"; };
-		74BED0CE17E86943B7315FEF /* Pods-KineduNPSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KineduNPSTests.debug.xcconfig"; path = "Target Support Files/Pods-KineduNPSTests/Pods-KineduNPSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		746A72C02A6B7EA900C5912D /* JsonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUtils.swift; sourceTree = "<group>"; };
+		746A72C22A6B994E00C5912D /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		74C6618B250C856C005C0CFC /* KineduNPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KineduNPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C6618E250C856C005C0CFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74C66197250C856D005C0CFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,9 +94,6 @@
 		74DB351F250F7ED9000CD4CE /* NPSChoiseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NPSChoiseCell.xib; sourceTree = "<group>"; };
 		74DB3522250F864C000CD4CE /* NPSDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPSDetailsViewModel.swift; sourceTree = "<group>"; };
 		74DB3524250FDA34000CD4CE /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
-		7B3045E014767120B2C3A863 /* Pods_KineduNPS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KineduNPS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E81A311BEBF93E4D45E2AF97 /* Pods_KineduNPSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KineduNPSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF3663B7771452940A1E58D7 /* Pods-KineduNPSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KineduNPSTests.release.xcconfig"; path = "Target Support Files/Pods-KineduNPSTests/Pods-KineduNPSTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +101,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17C7D91FD4A1658EB311C547 /* Pods_KineduNPS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D713294FD777A1E1AE6CAD7 /* Pods_KineduNPSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,21 +117,8 @@
 		1295F593FD7A70F704C779C0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5198D908AFB01D8CE908CCEC /* Pods-KineduNPS.debug.xcconfig */,
-				052432760E4D5740C2897575 /* Pods-KineduNPS.release.xcconfig */,
-				74BED0CE17E86943B7315FEF /* Pods-KineduNPSTests.debug.xcconfig */,
-				FF3663B7771452940A1E58D7 /* Pods-KineduNPSTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		54273993993AEBCD21A1562D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7B3045E014767120B2C3A863 /* Pods_KineduNPS.framework */,
-				E81A311BEBF93E4D45E2AF97 /* Pods_KineduNPSTests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		74C66182250C856C005C0CFC = {
@@ -147,7 +128,6 @@
 				74C661DC250ECA46005C0CFC /* KineduNPSTests */,
 				74C6618C250C856C005C0CFC /* Products */,
 				1295F593FD7A70F704C779C0 /* Pods */,
-				54273993993AEBCD21A1562D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -255,6 +235,8 @@
 			isa = PBXGroup;
 			children = (
 				74C661CA250CD0EB005C0CFC /* Extensions */,
+				746A72C02A6B7EA900C5912D /* JsonUtils.swift */,
+				746A72C22A6B994E00C5912D /* Mapper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -384,11 +366,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74C6619F250C856D005C0CFC /* Build configuration list for PBXNativeTarget "KineduNPS" */;
 			buildPhases = (
-				9CA52FDAADE4A1E122D7682F /* [CP] Check Pods Manifest.lock */,
 				74C66187250C856C005C0CFC /* Sources */,
 				74C66188250C856C005C0CFC /* Frameworks */,
 				74C66189250C856C005C0CFC /* Resources */,
-				840FE1153A1E3C51AABBB8B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -403,11 +383,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74C661E4250ECA46005C0CFC /* Build configuration list for PBXNativeTarget "KineduNPSTests" */;
 			buildPhases = (
-				9BA97F773D8CDEA4A5C1B0D4 /* [CP] Check Pods Manifest.lock */,
 				74C661D7250ECA46005C0CFC /* Sources */,
 				74C661D8250ECA46005C0CFC /* Frameworks */,
 				74C661D9250ECA46005C0CFC /* Resources */,
-				00EB555C6CBF0AFAAB515116 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -484,87 +462,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		00EB555C6CBF0AFAAB515116 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KineduNPSTests/Pods-KineduNPSTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KineduNPSTests/Pods-KineduNPSTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KineduNPSTests/Pods-KineduNPSTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		840FE1153A1E3C51AABBB8B7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KineduNPS/Pods-KineduNPS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KineduNPS/Pods-KineduNPS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KineduNPS/Pods-KineduNPS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9BA97F773D8CDEA4A5C1B0D4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KineduNPSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9CA52FDAADE4A1E122D7682F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KineduNPS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		74C66187250C856C005C0CFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -573,6 +470,8 @@
 				74C661B0250C8710005C0CFC /* Coordinator.swift in Sources */,
 				74C661F0250ED6F6005C0CFC /* NPSItem.swift in Sources */,
 				74DB3525250FDA34000CD4CE /* LaunchScreen.swift in Sources */,
+				746A72C12A6B7EA900C5912D /* JsonUtils.swift in Sources */,
+				746A72C32A6B994E00C5912D /* Mapper.swift in Sources */,
 				74DB3520250F7ED9000CD4CE /* NPSChoiseCell.swift in Sources */,
 				74C661FF250F1442005C0CFC /* AppVersionCell.swift in Sources */,
 				74C661CC250CD183005C0CFC /* StringExtensions.swift in Sources */,
@@ -675,7 +574,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -729,7 +628,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -741,17 +640,18 @@
 		};
 		74C661A0250C856D005C0CFC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5198D908AFB01D8CE908CCEC /* Pods-KineduNPS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 785V9QZK54;
 				INFOPLIST_FILE = KineduNPS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.climaco.KineduNPS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -761,17 +661,18 @@
 		};
 		74C661A1250C856D005C0CFC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 052432760E4D5740C2897575 /* Pods-KineduNPS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = 785V9QZK54;
 				INFOPLIST_FILE = KineduNPS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.climaco.KineduNPS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -781,12 +682,12 @@
 		};
 		74C661E2250ECA46005C0CFC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74BED0CE17E86943B7315FEF /* Pods-KineduNPSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 785V9QZK54;
 				INFOPLIST_FILE = KineduNPSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -802,12 +703,12 @@
 		};
 		74C661E3250ECA46005C0CFC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF3663B7771452940A1E58D7 /* Pods-KineduNPSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 785V9QZK54;
 				INFOPLIST_FILE = KineduNPSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

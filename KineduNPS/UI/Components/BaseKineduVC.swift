@@ -17,7 +17,7 @@ class BaseKineduVC: UIViewController {
   }
   
   private func configureView() {
-    self.navigationController?.navigationBar.barTintColor = KineduColors.niceBlue
+    self.navigationController?.navigationBar.backgroundColor =  KineduColors.niceBlue
     self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: KineduColors.white]
     createBackButton()
   }
@@ -33,11 +33,11 @@ class BaseKineduVC: UIViewController {
     self.view.endEditing(true)
     let loadingView = LoadingView()
     loadingView.tag = 500
-    guard let keyWindow = UIApplication.shared.keyWindow else { return }
+      guard let keyWindow = UIApplication.shared.windows.filter({ $0.isKeyWindow }).first else { return }
     loadingView.frame = CGRect.init(x: keyWindow.bounds.origin.x, y: keyWindow.bounds.origin.y, width: keyWindow.bounds.size.width, height: keyWindow.bounds.size.height)
     keyWindow.rootViewController?.view.isUserInteractionEnabled = false
     
-    if UIApplication.shared.keyWindow?.viewWithTag(500) == nil {
+      if UIApplication.shared.windows.filter({ $0.isKeyWindow }).first?.viewWithTag(500) == nil {
       UIView.transition(with: self.view, duration: 0.5, options: [.transitionCrossDissolve], animations: {
         keyWindow.addSubview(loadingView)
       }, completion: nil)
@@ -45,8 +45,8 @@ class BaseKineduVC: UIViewController {
   }
   
   func hideLoading() {
-      if let viewWithTag = UIApplication.shared.keyWindow?.viewWithTag(500) {
-          UIApplication.shared.keyWindow?.rootViewController?.view.isUserInteractionEnabled = true
+      if let viewWithTag = UIApplication.shared.windows.filter({ $0.isKeyWindow }).first?.viewWithTag(500) {
+          UIApplication.shared.windows.first?.rootViewController?.view.isUserInteractionEnabled = true
           UIView.transition(with: self.view, duration: 0.5, options: [.transitionCrossDissolve], animations: {
               viewWithTag.removeFromSuperview()
           }, completion: nil)

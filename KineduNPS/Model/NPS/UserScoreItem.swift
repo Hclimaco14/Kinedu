@@ -8,7 +8,7 @@
 
 import Foundation
 
-class UserScoreItem: NSObject {
+public struct UserScoreItem: Codable {
   var typeUser:String
   var score:Int
   var totalUser:Int
@@ -19,7 +19,7 @@ class UserScoreItem: NSObject {
     self.totalUser = totalUser
   }
   
-  override var description: String{
+    var description: String{
     var desc = "\ntypeUser: \(String(describing: typeUser))"
     desc += "\nscore: \(String(describing: score))"
     desc += "\ntotalUser: \(String(describing: totalUser))"

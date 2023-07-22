@@ -7,27 +7,16 @@
 //
 
 import Foundation
-import ObjectMapper
 
-open class BuildItem: NSObject,Mappable {
+public struct BuildItem: Codable {
   var release_date:String?
   var version:String?
   
-  open override var description: String {
+    var description: String {
     var desc = "release_date: \( String(describing:  release_date))"
     desc += "\nversion: \(String(describing: version))"
     
     return desc
   }
   
-  public override init() {}
-  
-  required public init?(map: Map) {
-  }
-  
-  open func mapping(map: Map) {
-    release_date <- map["release_date"]
-    version <- map["version"]
-    
-  }
 }

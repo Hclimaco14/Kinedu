@@ -5,33 +5,26 @@
 //  Created by david on 10/10/19.
 //  Copyright © 2019 Yopter. All rights reserved.
 
-
-import Alamofire
-import ObjectMapper
-
-private class NetworkManager {
-  /**
-   Funcion static que para el consumo de peticciones
-   */
-  static let sessionManager: Alamofire.SessionManager = {
-    let serverTrustPolicies: [String: ServerTrustPolicy] = [
-      KineduConstants.server: .disableEvaluation
-    ]
-    
-    let configuration = URLSessionConfiguration.default
-    configuration.httpAdditionalHeaders = Alamofire.SessionManager.defaultHTTPHeaders
-    return Alamofire.SessionManager(
-      configuration: configuration,
-      serverTrustPolicyManager: ServerTrustPolicyManager(policies: serverTrustPolicies)
-    )
-  }()
-}
+import Foundation
 /**
  
  */
+
+public enum HTTPMethod:String {
+    case get = "GET"
+    case post = "POST"
+    case put = "PUT"
+}
+
+public struct RequestError: Error {
+    let description: String
+}
+
 public class NetworkUtils {
+    
+    private static let session = URLSession.shared
   
-  private static let timeOutInterval: Double = 60
+    private static let timeOutInterval: Double = 60
   /**
    Ejecuta URLRequest y retorna un completion con dataresponse, error
    
@@ -41,43 +34,29 @@ public class NetworkUtils {
      - dataresponse:(Opcional) En caso de que la peticion sea exitosa regresa [String:Any]
      - error:(Opcional) En caso de que la peticion falle regresa descripcion
    */
-  public static func request(urlRequest: URLRequest?,_ completion : @escaping (_ dataresponse: Any?, _ error: String?) ->(Void)){
-    let sessionManager = NetworkManager.sessionManager
+ public static func request(urlRequest: URLRequest?,_ completion : @escaping (Result<Any?, RequestError>) -> Void) {
     
     guard let request = urlRequest else {
-      return completion(nil,"URL_NOTFOUND".localized() )
+        return completion(.failure(RequestError(description: "URL_NOTFOUND".localized())))
     }
     
-    let dataRequest:DataRequest = sessionManager.request(request)
-    
-    print("Begin Request...")
-    dataRequest.responseJSON { (response) in
-      let statusCode = response.response?.statusCode ?? 0
-      #if DEBUG
-      print("End Request with code: ", statusCode)
-      #endif
-      switch(response.result){
-        
-        case .success(let value):
-          #if DEBUG
-          print("Request Success: ",value)
-          #endif
-          if let jsonValueResponse =  response.result.value as? [String : Any] {
-            #if DEBUG
-            print("Response:",jsonValueResponse)
-            #endif
-            return completion(jsonValueResponse,nil)
-            
-          }
-          return completion(value,nil)
-        case .failure(let value):
-          if statusCode != 200 {
-            return completion(nil,value.localizedDescription)
-          } else {
-            return completion(nil,nil)
-        }
-      }
-    }
+     self.session.dataTask(with: request, completionHandler: { data, response, error in
+         if let error = error {
+             return completion(.failure(RequestError(description: error.localizedDescription)))
+         }
+         guard let response = response, let data = data else {
+             return completion(.failure( RequestError(description: "UNKNOW_ERROR".lowercased())))
+         }
+         
+         
+         guard let httpResp = response as? HTTPURLResponse,
+         (200...299).contains(httpResp.statusCode) else {
+             return completion(.failure(RequestError(description: "UNKNOW_ERROR".lowercased())))
+         }
+         
+         return completion(.success(JsonUtils.dataToJSON(with: data)))
+         
+     }).resume()
   }
   
   

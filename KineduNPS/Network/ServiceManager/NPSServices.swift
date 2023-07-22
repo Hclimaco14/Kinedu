@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ObjectMapper
 
 open class NPSServices {
   
@@ -21,13 +20,13 @@ open class NPSServices {
   ///   - completion: completionhandler con response:[NPSItem] y error:String
   ///   - response: Array con las calificaciones por version en caso de ser != nil
   ///   - error: descripcion de error en caso de ser != nil
-  public func getNPS( loadFromFile:Bool = false,_ completion: @escaping (_ response: [NPSItem]?,_ error:String?) -> Void) {
+  public func getNPS( loadFromFile:Bool = false,_ completion: @escaping (Result<[NPSItem]?,RequestError>) -> Void) {
     
     if loadFromFile {
       self.showLoading?()
       DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-        completion(self.readLocalFile(forName: "npsData"),nil)
-        self.hideLoading?()
+          self.hideLoading?()
+          return completion(.success(self.readLocalFile(forName: "npsData")))
       }
       return
     }
@@ -35,37 +34,39 @@ open class NPSServices {
     self.showLoading?()
     let service = "/bi/nps"
     let request = NetworkUtils.createRequest(urlString: service, HTTPMethod: .get)
-    NetworkUtils.request(urlRequest: request) { (response, errorDesciption) in
-      
-      self.hideLoading?()
-      
-      if let error = errorDesciption {
-        return completion(nil,error)
-      } else {
-        let npsArray = Mapper<NPSItem>().mapArray(JSONObject: response) ?? []
-        completion(npsArray, nil)
+      NetworkUtils.request(urlRequest: request) { result in
+          
+          self.hideLoading?()
+          
+          switch result {
+          case .success(let success):
+              let npsArray = Mapper<NPSItem>().mapArray(object: success) ?? []
+              return completion(.success(npsArray))
+          case .failure(let failure):
+              return completion(.failure(failure))
+          }
+          
+          
       }
-    }
     
   }
   
-  public func readLocalFile(forName name: String) -> [NPSItem]? {
-      
-      do {
-        if let bundlePath = Bundle.main.path(forResource: name,ofType: "json") {
-              let data = try Data(contentsOf: URL(fileURLWithPath: bundlePath), options: .mappedIfSafe)
+    public func readLocalFile(forName name: String) -> [NPSItem] {
         
-              let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableLeaves)
-              print(jsonResult)
-              let resonse = Mapper<NPSItem>().mapArray(JSONObject: jsonResult) ?? []
-              return resonse
-          }
-          
-      } catch {
-          print(error)
-      }
-      
-      return nil
-  }
+        do {
+            if let bundlePath = Bundle.main.path(forResource: name,ofType: "json") {
+                let data = try Data(contentsOf: URL(fileURLWithPath: bundlePath), options: .alwaysMapped)
+                
+                
+                let resonse = Mapper<NPSItem>().mapArray(object: data) ?? []
+                return resonse
+            }
+            
+        } catch {
+            print(error)
+        }
+        
+        return []
+    }
   
 }
